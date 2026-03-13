@@ -254,20 +254,7 @@ Open **http://localhost:3000** — create an account and start building.
 
 ---
 
-## Design Decisions
-
-- **Light theme** — warm cream background (#f8f7f4) with burnt-orange accent (#e85d26). Humanized, not sterile.
-- **Plus Jakarta Sans** — warm, rounded font family. Not Inter, not Roboto.
-- **Drag & drop** — `@dnd-kit` handles all DnD. Cross-column moves update task status immediately, persisted via `PUT /tasks/bulk/reorder`.
-- **Optimistic UI** — drag-drop updates state immediately; reverts if backend call fails.
-- **Socket rooms** — each project has its own room (`project:{id}`). Each user has a personal room (`user:{id}`) for notifications.
-
----
 
 ## License
 
 MIT — free to use, fork, and deploy.
-
----
-
-Built by Anusha · Full-stack portfolio project · React + Node.js + MongoDB + Socket.IO

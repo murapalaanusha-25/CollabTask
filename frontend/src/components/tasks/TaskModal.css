@@ -1,0 +1,47 @@
+.task-modal-tabs {
+  display: flex; gap: 4px; margin-bottom: 20px;
+  border-bottom: 1.5px solid var(--border); padding-bottom: 0;
+}
+.task-tab {
+  background: none; color: var(--text2);
+  font-size: 13.5px; font-weight: 500;
+  padding: 8px 14px; border-radius: 8px 8px 0 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1.5px; display: flex; align-items: center; gap: 6px;
+}
+.task-tab:hover { color: var(--text); }
+.task-tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.tab-count {
+  background: var(--accentbg); color: var(--accent);
+  font-size: 10px; font-weight: 700; padding: 1px 5px; border-radius: 10px;
+}
+
+.task-modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* Comments */
+.task-comments {}
+.comments-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; max-height: 300px; overflow-y: auto; }
+.comment-item { display: flex; gap: 10px; }
+.comment-body { flex: 1; background: var(--bg3); border: 1.5px solid var(--border); border-radius: 10px; padding: 10px 13px; }
+.comment-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; font-size: 12.5px; }
+.comment-meta strong { font-weight: 700; }
+.comment-meta span { color: var(--text3); font-size: 11px; flex: 1; }
+.comment-delete { background: none; color: var(--text3); font-size: 16px; padding: 0 4px; border-radius: 4px; }
+.comment-delete:hover { color: var(--red); background: var(--redbg); }
+.comment-text { font-size: 13.5px; line-height: 1.6; color: var(--text); white-space: pre-wrap; }
+.comment-form {}
+
+/* Activity */
+.activity-log { display: flex; flex-direction: column; gap: 0; max-height: 360px; overflow-y: auto; }
+.activity-item {
+  display: flex; gap: 14px; padding: 10px 0;
+  border-left: 2px solid var(--border); margin-left: 8px; padding-left: 20px;
+  position: relative;
+}
+.activity-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--bg2); border: 2px solid var(--border2);
+  position: absolute; left: -6px; top: 14px;
+}
+.activity-content p { font-size: 13.5px; line-height: 1.5; }
+.activity-content span { font-size: 11.5px; color: var(--text3); font-family: var(--mono); }

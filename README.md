@@ -1,4 +1,4 @@
-# CollabTask v2 — Team Project Management Platform
+# CollabTask — Team Project Management Platform
 
 A full-stack, production-grade project management app built with **React**, **Node.js**, **Express**, **MongoDB**, and **Socket.IO**.
 
